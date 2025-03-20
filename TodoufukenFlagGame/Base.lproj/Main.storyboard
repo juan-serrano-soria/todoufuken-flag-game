@@ -24,8 +24,11 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="aichi"/>
+                                <connections>
+                                    <action selector="flagButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmb-hL-k6B"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo2-Ur-2iJ">
+                            <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo2-Ur-2iJ">
                                 <rect key="frame" x="66.666666666666686" y="373.66666666666669" width="260" height="174.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="1iw-Cb-TLe"/>
@@ -33,8 +36,11 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="akita"/>
+                                <connections>
+                                    <action selector="flagButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJT-QG-hnn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-kU-HVF">
+                            <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-kU-HVF">
                                 <rect key="frame" x="66.666666666666686" y="557.66666666666663" width="260" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="Lxq-K8-v2X"/>
@@ -42,6 +48,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="aomori"/>
+                                <connections>
+                                    <action selector="flagButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1r-Bc-T5Y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

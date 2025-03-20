@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24)
+        ]
+        
         flagButton1.layer.borderWidth = 1
         flagButton2.layer.borderWidth = 1
         flagButton3.layer.borderWidth = 1
@@ -30,7 +34,7 @@ class ViewController: UIViewController {
         askQuestion()
     }
 
-    func askQuestion() {
+    func askQuestion(action: UIAlertAction! = nil) {
         prefectures.shuffle()
         correctAnswer = Int.random(in: 0...2)
         
@@ -41,5 +45,22 @@ class ViewController: UIViewController {
         title = prefectures[correctAnswer].kanji
     }
 
+    
+    @IBAction func flagButtonTap(_ sender: UIButton) {
+        var title: String
+        
+        if sender.tag == correctAnswer {
+            title = "正解です"
+            score += 1
+        } else {
+            title = "間違いです"
+            score -= 1
+        }
+        
+        let alertController = UIAlertController(title: title, message: "点数は\(score)", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "次へ", style: .default, handler: askQuestion))
+        
+        present(alertController, animated: true)
+    }
 }
 
