@@ -14,7 +14,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        flagButton1.layer.borderWidth = 1
+        flagButton2.layer.borderWidth = 1
+        flagButton3.layer.borderWidth = 1
+        
+        flagButton1.layer.borderColor = UIColor.lightGray.cgColor
+        flagButton2.layer.borderColor = UIColor.lightGray.cgColor
+        flagButton3.layer.borderColor = UIColor.lightGray.cgColor
     }
 
 

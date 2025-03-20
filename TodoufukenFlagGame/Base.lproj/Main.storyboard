@@ -16,31 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wos-oL-ti6">
-                                <rect key="frame" x="66" y="127" width="260" height="182"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wos-oL-ti6">
+                                <rect key="frame" x="66.666666666666686" y="189.66666666666663" width="260" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="Qu5-Bp-fSB"/>
+                                    <constraint firstAttribute="width" constant="260" id="RqQ-N4-MrA"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="aichi"/>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo2-Ur-2iJ">
-                                <rect key="frame" x="66" y="335" width="260" height="182"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo2-Ur-2iJ">
+                                <rect key="frame" x="66.666666666666686" y="373.66666666666669" width="260" height="174.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="1iw-Cb-TLe"/>
+                                    <constraint firstAttribute="width" constant="260" id="7zp-bR-Ufe"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="akita"/>
                             </button>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-kU-HVF">
-                                <rect key="frame" x="66" y="543" width="260" height="182"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8U-kU-HVF">
+                                <rect key="frame" x="66.666666666666686" y="557.66666666666663" width="260" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="Lxq-K8-v2X"/>
+                                    <constraint firstAttribute="width" constant="260" id="azN-ti-z5J"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chiba"/>
+                                <buttonConfiguration key="configuration" style="plain" image="aomori"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bo2-Ur-2iJ" firstAttribute="top" secondItem="wos-oL-ti6" secondAttribute="bottom" constant="26" id="C0s-EA-zIH"/>
-                            <constraint firstItem="N8U-kU-HVF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J0O-pD-5sP"/>
-                            <constraint firstItem="N8U-kU-HVF" firstAttribute="top" secondItem="Bo2-Ur-2iJ" secondAttribute="bottom" constant="26" id="Sgv-TW-PJ5"/>
-                            <constraint firstItem="Bo2-Ur-2iJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dZS-YS-Z62"/>
-                            <constraint firstItem="wos-oL-ti6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tqY-yZ-fct"/>
-                            <constraint firstItem="Bo2-Ur-2iJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xN5-zq-psB"/>
+                            <constraint firstItem="Bo2-Ur-2iJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4IK-g7-M60"/>
+                            <constraint firstItem="wos-oL-ti6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6L5-5V-m0X"/>
+                            <constraint firstItem="Bo2-Ur-2iJ" firstAttribute="top" secondItem="wos-oL-ti6" secondAttribute="bottom" constant="10" id="BFk-MN-3fE"/>
+                            <constraint firstItem="Bo2-Ur-2iJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cNH-mm-FFi"/>
+                            <constraint firstItem="N8U-kU-HVF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tZM-4v-idq"/>
+                            <constraint firstItem="N8U-kU-HVF" firstAttribute="top" secondItem="Bo2-Ur-2iJ" secondAttribute="bottom" constant="10" id="v0V-9g-J06"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Frc-HB-C9d"/>
@@ -74,9 +86,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="aichi" width="260" height="182"/>
-        <image name="akita" width="260" height="182"/>
-        <image name="chiba" width="260" height="174"/>
+        <image name="aichi" width="260" height="174"/>
+        <image name="akita" width="260" height="174"/>
+        <image name="aomori" width="260" height="174"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
