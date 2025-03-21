@@ -42,22 +42,25 @@ class ViewController: UIViewController {
         flagButton2.setImage(UIImage(named: prefectures[1].romaji), for: .normal)
         flagButton3.setImage(UIImage(named: prefectures[2].romaji), for: .normal)
         
-        title = prefectures[correctAnswer].kanji
+        title = "\(prefectures[correctAnswer].kanji) ・ 得点：\(score)点"
     }
 
     
     @IBAction func flagButtonTap(_ sender: UIButton) {
         var title: String
+        var message: String
         
         if sender.tag == correctAnswer {
-            title = "正解です"
+            title = "⭕️ 正解です"
+            message = "1点獲得しました！"
             score += 1
         } else {
-            title = "間違いです"
+            title = "❌ 間違いです"
+            message = "1点減点されました。\nこの旗は「\(prefectures[sender.tag].kanji)」です。"
             score -= 1
         }
         
-        let alertController = UIAlertController(title: title, message: "点数は\(score)", preferredStyle: .alert)
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "次へ", style: .default, handler: askQuestion))
         
         present(alertController, animated: true)
